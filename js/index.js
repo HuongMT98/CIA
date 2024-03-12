@@ -1,10 +1,10 @@
 let navmenuMobileMenu = document.querySelector('.navmenu-mobile-menu')
 
 function navOpen() {
-    navmenuMobileMenu.classList.add('active')
+    navmenuMobileMenu.classList.toggle('active')
 }
 function navClose() {
-    navmenuMobileMenu.classList.remove('active')
+    navmenuMobileMenu.classList.toggle('active')
 }
 
 
@@ -12,9 +12,10 @@ function navClose() {
 
 let navOptions = document.querySelectorAll('.navmenumobile-option-lg');
 
-navOptions.forEach(option => {
-    option.addEventListener('click', () => {
-        option.querySelector('.navmenumobile-option-smol').classList.toggle('active');
+navOptions.forEach(e => {
+    e.addEventListener('click', () => {
+        let newNavOption = e.querySelector('.navmenumobile-option-smol')
+        newNavOption.classList.toggle('active');
     });
 });
 

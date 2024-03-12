@@ -8,240 +8,12 @@
 body {
   position: relative;
 }
-/* 
-                                                            Navbar 
-*/
-.container-nav {
-  background-color: #161618;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-.nav-contact {
-  width: 100%;
-  height: 2rem;
-  line-height: 2rem;
-  position: relative;
-}
-
-.nav-contact-item {
-  position: absolute;
-  right: 0;
-}
-.nav-contact-item button {
-  background: transparent;
-  border: none;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-}
-.nav-contact-item a {
-  padding: 0 2rem;
-  font-size: 21px;
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.nav-contact-item > button:hover > a {
-  border-bottom: 5px solid red;
-  transition: 0.5s all ease-in-out;
-  -webkit-transition: 0.5s all ease-in-out;
-  -moz-transition: 0.5s all ease-in-out;
-  -ms-transition: 0.5s all ease-in-out;
-  -o-transition: 0.5s all ease-in-out;
-}
-
-/*
-                                                          Nav menu 
-*/
-.nav-menu {
-  display: flex;
-  position: relative;
-  padding: 0;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: 6rem;
-  /* line-height: 6rem; */
-}
-/*
-                                                          Nav menu Home 
-*/
-.nav-menu .navmenu-home {
-  width: calc(20%);
-}
-.navmenu-home-title {
-  font-size: 17px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-  padding: 0.5rem;
-}
-.nav-menu .navmenu-home a {
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-.nav-menu .navmenu-home a > img {
-  width: 6rem;
-  height: 6rem;
-}
-/**Nav menu option */
-.nav-menu .navmenu-option {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: calc(60%);
-  flex-wrap: wrap;
-  color: white;
-  font-size: 1.3rem;
-}
-.navmenu-option-lg {
-  margin: 0 2rem;
-  position: relative;
-}
-.navmenu-option .navmenu-option-lg > a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.navmenu-option .navmenu-option-smol ul {
-  background-color: #161618;
-  width: max-content;
-  height: max-content;
-  padding: 1rem;
-  position: absolute;
-  border: 1px solid;
-  border-radius: 10px;
-  display: none;
-  top: 32px;
-  left: -30px;
-}
-.navmenu-option .navmenu-option-lg:hover ul {
-  display: block;
-}
-.navmenu-option .navmenu-option-smol li {
-  list-style: none;
-  padding: 3px 0;
-  height: 2.2rem;
-  min-width: 10rem;
-}
-
-.navmenu-option .navmenu-option-smol li:hover {
-  border-bottom: 5px solid red;
-  height: 2.2rem;
-  transition: 0.3s cubic-bezier(0.5, 0.15, 0.5, 0.85);
-  -webkit-transition: 0.3s cubic-bezier(0.5, 0.15, 0.5, 0.85);
-  -moz-transition: 0.3s cubic-bezier(0.5, 0.15, 0.5, 0.85);
-  -ms-transition: 0.3s cubic-bezier(0.5, 0.15, 0.5, 0.85);
-  -o-transition: 0.3s cubic-bezier(0.5, 0.15, 0.5, 0.85);
-}
-.navmenu-option .navmenu-option-smol li > a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-/*
-                                                          Nav menu Search 
-*/
-.navmenu-search {
-  width: calc(20%);
-  display: flex;
-}
-.navmenu-search > button {
-  width: 3rem;
-  height: 3rem;
-  background: transparent;
-  border: none;
-  border-radius: 0 10px 10px 0;
-}
-
-.navmenu-search > input {
-  width: 80%;
-  height: 3rem;
-  line-height: 3rem;
-  border: 1px solid white;
-  background-color: transparent;
-  font-size: 18px;
-  color: white;
-  padding: 0 0.5rem;
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-}
-.navmenu-search > input:hover {
-  border: none;
-  cursor: pointer;
-  box-shadow: inset 10px 0px 0px #e21a41;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-}
-.navmenu-search > i {
-  width: 3rem;
-  height: 3rem;
-  line-height: 3rem;
-  font-size: 2rem;
-  text-align: center;
-  color: white;
-  padding: 0 10px;
-}
-.navmenu-search > i:hover {
-  border-left: 5px solid red;
-  width: 3rem;
-  height: 3rem;
-  transform: translate(-5px, 0px);
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-transform: translate(-5px, 0px);
-  -moz-transform: translate(-5px, 0px);
-  -ms-transform: translate(-5px, 0px);
-  -o-transform: translate(-5px, 0px);
-}
-
-/* Main ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️*/
-main {
-  position: absolute;
-  top: 6rem;
-  background-color: #161618d0;
-}
-
 /*
                                                               Heading 
 */
 #heading {
   background-image: url(/asset/img/Threads_About@2x-b4c9b65429f47818297535a7e3b29801.png);
+  background-color: #161618;
   background-size: 100% 75%;
   width: 100%;
   height: max-content;
@@ -258,7 +30,7 @@ main {
   flex-direction: row;
   align-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 10rem 0 0 0;
 }
 .heading-content-left {
   width: 50%;
@@ -346,7 +118,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 5rem;
 }
 .legacy-content {
   width: 80%;
@@ -479,12 +251,14 @@ main {
   margin-top: 3em;
   display: flex;
   justify-content: center;
+  background-color: #161618;
 }
 .legacy-main-all {
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 5rem 0;
 }
 .legacymain-left {
   width: 50%;
@@ -649,7 +423,8 @@ main {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 5rem;
+  background-color: #161618;
 }
 .factbook-all {
   width: 80%;
@@ -720,6 +495,7 @@ main {
   flex-wrap: wrap;
   align-content: center;
   align-items: stretch;
+  border-top: 2px solid rgba(255, 255, 255, 0.388);
 }
 .footer-all {
   width: 80%;

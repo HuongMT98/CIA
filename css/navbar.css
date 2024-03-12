@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Truculenta", sans-serif;
+}
+
+/*
+                                         Nav Contact
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+ */
+.container-nav {
+  background-color: #161618;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+}
+.nav-contact {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.nav-contact-item button {
+  background: transparent;
+  border: none;
+}
+.nav-contact-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 0 2rem;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.nav-contact-item a:hover {
+  box-shadow: inset 0px -6px red;
+  transition: 1s;
+}
+/*
+                                                Nav Menu
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+*/
+.nav-menu {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*
+                                                Nav Home
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+*/
+.navmenu-home {
+  width: 20%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navmenu-home img {
+  width: auto;
+  height: 4rem;
+  padding: 0 10px;
+}
+.navmenu-home a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/*
+                                                Nav Menu Option
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+*/
+.navmenu-option {
+  width: 60%;
+  height: 4rem;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.navmenu-option-lg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.navmenu-option-lg > a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navmenu-option-smol {
+  display: none;
+  position: absolute;
+  top: 42px;
+  background-color: rgb(22 22 24);
+  border: 3px solid #ffffff70;
+  border-radius: 5px;
+  min-width: 13rem;
+}
+.navmenu-option-smol ul {
+  padding: 0 1rem;
+}
+.navmenu-option-smol li {
+  list-style-type: none;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.navmenu-option-smol a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  width: max-content;
+  height: 2.6rem;
+}
+.navmenu-option-lg:hover .navmenu-option-smol {
+  display: block;
+}
+.navmenu-option-smol li:hover {
+  border-bottom: 4px solid red;
+  height: 2.6rem;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+/*
+                                                Nav Menu Search
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+*/
+.navmenu-search {
+  width: 20%;
+  height: 4rem;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.navmenu-search-icon {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: max-content;
+  background: transparent;
+  border: none;
+}
+.navmenu-search-icon i {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+  padding: 0 0 0 5px;
+}
+.navmenu-search > input {
+  width: 80%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.navmenu-search > input:hover {
+  box-shadow: inset 10px 0 red;
+  transition: all 1s;
+  border: none;
+}
+
+/*
+                                    Responsive
+⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
+*/
+
+/* Phone  */
+@media screen and (max-width: 430px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .navmenu-home-title {
+    font-size: 14px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+}
