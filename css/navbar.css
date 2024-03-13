@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Truculenta", sans-serif;
 }
+.open-navbar {
+  display: block !important;
+}
+.close-navbar {
+  display: none !important;
+}
 
 /*
                                          Nav Contact
@@ -84,6 +90,11 @@
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+.navmenu-home-title {
+  width: 4rem;
+  height: 4rem;
+  font-size: 14px;
 }
 
 /*
@@ -210,17 +221,17 @@
 /* Phone  */
 @media screen and (max-width: 430px) {
   .nav-menu {
-    display: none;
+    display: none !important;
   }
 }
 
 /* Tablet */
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  .navmenu-home-title {
-    font-size: 14px;
-  }
+@media screen and (min-width: 431px) and (max-width: 768px) {
 }
 
 /* Desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .mobile-navbar {
+    display: none !important;
+  }
 }

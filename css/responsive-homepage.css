@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Phone  */
+@media screen and (max-width: 430px) {
+  #heading {
+    height: 70rem;
+  }
+  .heading-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+  }
+  .heading-content-left {
+    width: 100%;
+  }
+  .heading-content-left > h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+  .heading-content-right {
+    width: 100%;
+  }
+  .heading-content-rightimg {
+    width: 100%;
+  }
+  .heading-content-rightimg > img {
+    width: 100%;
+  }
+  .calling-button {
+    width: 100%;
+  }
+  .legacy-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .legacy-left {
+    width: 100%;
+  }
+  .legacy-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 1rem;
+  }
+  .legacy-main-all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .legacymain-left {
+    width: 100%;
+  }
+  .legacymain-left img {
+    width: 100%;
+    height: fit-content;
+  }
+  .legacymain-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  .story-all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .story-readmoreall {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .story-readmore {
+    width: 95%;
+    height: auto;
+    margin: 1rem 0;
+  }
+  .factbook-all {
+    width: 100%;
+    padding: 1rem;
+  }
+  .factbook-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .factbook-right {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 431px) and (max-width: 768px) {
+  .heading-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .calling-button {
+    width: 100%;
+  }
+  .legacy-main-all {
+    width: 95%;
+  }
+  .legacymain-right {
+    padding: 1rem;
+  }
+  .story-all {
+    width: 95%;
+  }
+  .story-readmore img {
+    height: auto;
+  }
+  .story-readmore-title {
+    height: max-content;
+    padding: 0.5rem 0.5rem 4rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+}

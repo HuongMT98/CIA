@@ -1,21 +1,24 @@
-let navmenuMobileMenu = document.querySelector('.navmenu-mobile-menu')
+/**Navbar mobile open Close */
 
-function navOpen() {
-    navmenuMobileMenu.classList.toggle('active')
-}
-function navClose() {
-    navmenuMobileMenu.classList.toggle('active')
+function openNavBar() {
+    document.querySelector('.navmenu-option-m').style.display = 'block';
 }
 
+function closeNavBar() {
+    document.querySelector('.navmenu-option-m').style.display = 'none';
+}
 
+// 🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥🚥
 
+/*NavMenu-Option */
 
-let navOptions = document.querySelectorAll('.navmenumobile-option-lg');
+let showNavbar = document.querySelectorAll('.navmenu-option-lg-m');
+let navShow = document.querySelector('.navmenu-option-smol-m');
 
-navOptions.forEach(e => {
+showNavbar.forEach(e => {
+    console.log('pick', e)
     e.addEventListener('click', () => {
-        let newNavOption = e.querySelector('.navmenumobile-option-smol')
-        newNavOption.classList.toggle('active');
+        let contentM = e.querySelector('.navmenu-option-smol-m')
+        contentM.classList.toggle('open-navbar')
     });
 });
-

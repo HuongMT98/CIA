@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/navbar-mobile.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive-homepage.css">
+    <link rel="stylesheet" href="./css/responesive-footer.css">
 
 
 
@@ -39,9 +40,12 @@
                     <button><a href="#">Report Information</a></button>
                 </nav>
             </nav>
+
+
+            <!-- NavBar********************************************************* -->
             <nav class="nav-menu">
                 <nav class="navmenu-home">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./asset/img/cia_seal_full_color780.png" alt="">
                         <nav class="navmenu-home-title">
                             <span>Central Intelligence Agency</span>
@@ -53,8 +57,8 @@
                     <nav class="navmenu-option-lg"><a href="#">Today's CIA</a>
                         <nav class="navmenu-option-smol">
                             <ul>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Leadership</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./leadership.html">Leadership</a></li>
                                 <li><a href="">Organization</a></li>
                                 <li><a href="">Mission & Vision</a></li>
                                 <li><a href="">Partner with CIA</a></li>
@@ -130,104 +134,110 @@
             </nav>
 
 
-            <!-- Nav-Mobile -->
+            <!-- NavBar Mobile************************************************** -->
+            <nav class="mobile-navbar">
+                <nav class="nav-menu-m">
+                    <nav class="navmenu-home-m">
+                        <a href="#">
+                            <img src="./asset/img/cia_seal_full_color780.png" alt="">
+                            <nav class="navmenu-home-title-m">
+                                <span>Central Intelligence Agency</span>
+                            </nav>
 
-            <!-- <nav class="navmenu-mobile">
-
-                <nav class="navmenu-mobile-home">
-                    <a href="#">
-                        <img src="./asset/img/cia_seal_full_color780.png" alt="">
-                        <nav class="navmenu-home-title">
-                            <span>Central Intelligence Agency</span>
+                        </a>
+                    </nav>
+                    <nav class="navmenu-option-m">
+                        <nav class="button-close-navbar">
+                            <button><i class="fas fa-times" onclick="closeNavBar()"></i></button>
                         </nav>
-
-                    </a>
-                </nav>
-                <nav class="navmenu-bar">
-                    <button id="navbar-open" onclick="navOpen()"><i class="fa-solid fa-bars"></i></button>
-                    <nav class="navmenu-mobile-menu">
-                        <button id="navbar-close" onclick="navClose()"><i
-                                class="fa-solid fa-bars-staggered"></i></button>
-                        <nav class="navmenu-search">
-                            <input type="text" placeholder="Search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </nav>
-                        <nav class="navmenumobile-section close-navbar">
-                            <nav class="navmenumobile-option-lg"><a href="#" class="show">Today's
-                                    CIA</a>
-                                <nav class="navmenumobile-option-smol">
-                                    <ul class="about">
-                                        <li><a href="">About</a></li>
-                                        <li><a href="">Leadership</a></li>
-                                        <li><a href="">Organization</a></li>
-                                        <li><a href="">Mission & Vision</a></li>
-                                        <li><a href="">Partner with CIA</a></li>
-                                        <li><a href="">Technology</a></li>
-                                        <li><a href="">Privacy</a></li>
-                                    </ul>
-                                </nav>
+                        <nav class="navmenu-option-mcontent">
+                            <nav class="navmenu-search-m">
+                                <input type="text" placeholder="Search">
+                                <button class="navmenu-search-m-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
 
                             </nav>
-                            <nav class="navmenumobile-option-lg"><a href="#" class="show">Careers</a>
-                                <nav class="navmenumobile-option-smol">
-                                    <ul class="career">
-                                        <li><a href="">Career Opportunities</a></li>
-                                        <li><a href="">Hiring Process</a></li>
-                                        <li><a href="">Benefits</a></li>
-                                        <li><a href="">Diversity & Inclusion</a></li>
-                                        <li><a href="">Accommodations</a></li>
-                                        <li><a href="">Language Opportunities</a></li>
-                                        <li><a href="">Veterans</a></li>
-                                        <li><a href="">Student Programs</a></li>
-                                    </ul>
-                                </nav>
+                            <nav class="nav-lg-m">
+                                <nav class="navmenu-option-lg-m"><a href="#">Today's CIA</a>
+                                    <nav class="navmenu-option-smol-m">
+                                        <ul>
+                                            <li><a href="./about.html">About</a></li>
+                                            <li><a href="./leadership.html">Leadership</a></li>
+                                            <li><a href="">Organization</a></li>
+                                            <li><a href="">Mission & Vision</a></li>
+                                            <li><a href="">Partner with CIA</a></li>
+                                            <li><a href="">Technology</a></li>
+                                            <li><a href="">Privacy</a></li>
+                                        </ul>
+                                    </nav>
 
-                            </nav>
-                            <nav class="navmenumobile-option-lg"><a href="#legacy" class="show">Legacy</a>
-                                <nav class="navmenumobile-option-smol">
-                                    <ul class="legacy">
-                                        <li><a href="">Origin</a></li>
-                                        <li><a href="">History</a></li>
-                                        <li><a href="">Museum</a></li>
-                                        <li><a href="">Headquarters</a></li>
-                                        <li><a href="">Trailblazers</a></li>
-                                        <li><a href="">In Memoriam</a></li>
-                                    </ul>
                                 </nav>
+                                <nav class="navmenu-option-lg-m"><a href="#">Careers</a>
+                                    <nav class="navmenu-option-smol-m">
+                                        <ul>
+                                            <li><a href="">Career Opportunities</a></li>
+                                            <li><a href="">Hiring Process</a></li>
+                                            <li><a href="">Benefits</a></li>
+                                            <li><a href="">Diversity & Inclusion</a></li>
+                                            <li><a href="">Accommodations</a></li>
+                                            <li><a href="">Language Opportunities</a></li>
+                                            <li><a href="">Veterans</a></li>
+                                            <li><a href="">Student Programs</a></li>
+                                        </ul>
+                                    </nav>
 
-                            </nav>
-                            <nav class="navmenumobile-option-lg"><a href="#story" class="show">Newsroom</a>
-                                <nav class="navmenumobile-option-smol">
-                                    <ul class="newsroom">
-                                        <li><a href="">News & Stories</a></li>
-                                        <li><a href="">Press Releases & Statements</a></li>
-                                        <li><a href="">Speeches & Transcripts</a></li>
-                                        <li><a href="">The Langley Files Podcast</a></li>
-                                    </ul>
                                 </nav>
+                                <nav class="navmenu-option-lg-m"><a href="#legacy">Legacy</a>
+                                    <nav class="navmenu-option-smol-m">
+                                        <ul>
+                                            <li><a href="">Origin</a></li>
+                                            <li><a href="">History</a></li>
+                                            <li><a href="">Museum</a></li>
+                                            <li><a href="">Headquarters</a></li>
+                                            <li><a href="">Trailblazers</a></li>
+                                            <li><a href="">In Memoriam</a></li>
+                                        </ul>
+                                    </nav>
 
-                            </nav>
-                            <nav class="navmenumobile-option-lg"><a href="#factbook" class="show">Library</a>
-                                <nav class="navmenumobile-option-smol">
-                                    <ul class="library">
-                                        <li><a href="">Resources</a></li>
-                                        <li><a href="">Publications</a></li>
-                                        <li><a href="">Prepublication Review</a></li>
-                                        <li><a href="">Study of Intelligence</a></li>
-                                        <li><a href="">World Factbook</a></li>
-                                        <li><a href="">CIA Reports</a></li>
-                                        <li><a href="">CIA Maps</a></li>
-                                        <li><a href="">FOIA Reading Room</a></li>
-                                    </ul>
                                 </nav>
+                                <nav class="navmenu-option-lg-m"><a href="#story">Newsroom</a>
+                                    <nav class="navmenu-option-smol-m">
+                                        <ul>
+                                            <li><a href="">News & Stories</a></li>
+                                            <li><a href="">Press Releases & Statements</a></li>
+                                            <li><a href="">Speeches & Transcripts</a></li>
+                                            <li><a href="">The Langley Files Podcast</a></li>
+                                        </ul>
+                                    </nav>
 
+                                </nav>
+                                <nav class="navmenu-option-lg-m"><a href="#factbook">Library</a>
+                                    <nav class="navmenu-option-smol-m">
+                                        <ul>
+                                            <li><a href="">Resources</a></li>
+                                            <li><a href="">Publications</a></li>
+                                            <li><a href="">Prepublication Review</a></li>
+                                            <li><a href="">Study of Intelligence</a></li>
+                                            <li><a href="">World Factbook</a></li>
+                                            <li><a href="">CIA Reports</a></li>
+                                            <li><a href="">CIA Maps</a></li>
+                                            <li><a href="">FOIA Reading Room</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </nav>
                             </nav>
                         </nav>
                     </nav>
                 </nav>
+                <nav class="close-nav">
+                    <button class="button-open-navbar" onclick="openNavBar()"><i class="fas fa-bars"></i></button>
+                </nav>
+            </nav>
 
 
-            </nav> -->
+
 
 
         </nav>

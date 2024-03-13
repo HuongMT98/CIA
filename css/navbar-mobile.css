@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 4rem;
+  position: relative;
+}
+.nav-menu-m {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.navmenu-home-m {
+  width: 30%;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.navmenu-home-m a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  text-decoration: none;
+}
+.navmenu-home-m a img {
+  width: 4rem;
+  height: max-content;
+}
+.navmenu-home-title-m > span {
+  display: none;
+}
+.navmenu-home-title-m::after {
+  content: "CIA";
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+}
+
+.navmenu-option-m {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: black;
+  z-index: 5;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.button-close-navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: absolute;
+  padding-right: 2rem;
+  align-items: center;
+}
+.button-close-navbar > button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  color: red;
+}
+.button-close-navbar > button > i {
+  font-size: 3rem;
+}
+.navmenu-search-m {
+  padding-top: 4rem;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.navmenu-search-m > input {
+  height: 4rem;
+  width: 80%;
+  padding-left: 1rem;
+  border-radius: 5px 0 0 5px;
+  background: transparent;
+  border: 1px solid #ffffff6b;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.navmenu-search-m > input:hover {
+  border: none;
+  box-shadow: inset 5px 0 red;
+  transition: all 1s;
+}
+.navmenu-search-m-icon {
+  width: 18%;
+  height: 4rem;
+  border: 2px solid #ffffff6b;
+  background-color: transparent;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+}
+.navmenu-option-mcontent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+.nav-lg-m {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: max-content;
+  line-height: 2rem;
+  padding: 1rem 0 0 1rem;
+}
+.navmenu-option-lg-m {
+  height: max-content;
+}
+.navmenu-option-lg-m > a {
+  text-decoration: none;
+  width: 100%;
+  height: max-content;
+  color: white;
+}
+.navmenu-option-smol-m {
+  display: none;
+}
+.navmenu-option-smol-m {
+  list-style-type: none;
+}
+.navmenu-option-smol-m > ul {
+  list-style-type: none;
+}
+
+.navmenu-option-smol-m a {
+  text-decoration: none;
+  color: white;
+}
+.close-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 2rem;
+}
+.button-open-navbar {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  color: red;
+}
+.button-open-navbar > i {
+  font-size: 3rem;
+}
+
+.button-open-navbar:hover,
+.button-close-navbar > button:hover {
+  transition: 0.2s;
+  border: 1px solid red;
+  height: 3rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}

@@ -141,9 +141,11 @@
   color: red;
 }
 .social-icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.social-icons .icon:hover {
-}
+
 .social-icons i {
   width: 100%;
   height: 3rem;
