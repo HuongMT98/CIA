@@ -2,216 +2,123 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/*
-                                                Phone  
- */
-@media screen and (max-width: 430px) {
+} /* Mobile: */
+@media screen and (max-width: 739px) {
   #heading-about {
     width: 100%;
     padding-top: 7rem;
-    height: max-content;
   }
   .heading-about-all {
     width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .heading-aboutleft {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
+  .heading-about-content {
+    width: 95%;
   }
   .heading-aboutright {
-    width: 80%;
-    height: max-content;
-  }
-  #heading-about-bottom {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
   }
   .heading-about-bottom-all {
     width: 95%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    align-content: space-around;
   }
   .heading-about-bottom-h1 {
     width: 100%;
-    padding-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   .heading-about-bottom-content {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
   .heading-about-bottom-content > p {
-    width: 100%;
-    padding: 1rem;
-  }
-  .cia-mean-all {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-  }
-  .cia-mean-left {
-    width: 100%;
-    height: 15rem;
-  }
-  .cia-mean-right {
-    width: 100%;
+    width: 80%;
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-  .what-we-do-all {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+  .cia-mean-left,
+  .cia-mean-right,
   .what-we-do-left,
-  .what-we-do-right {
-    width: 100%;
-  }
-  .how-we-do-all {
-    width: 95%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
+  .what-we-do-right,
   .how-we-do-left,
-  .how-we-do-right {
-    width: 100%;
-  }
-  .how-we-do-p {
-    padding: 0.2rem;
-  }
-  .mission-vision-all {
-    width: 100%;
-  }
-  .mission-vision-left {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mission-vision-right {
-    width: 100%;
-  }
-  .organization-all {
-    width: 95%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .organization-left {
-    width: 100%;
-  }
-  .organization-right {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  .leader-all {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .leader-left {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .leader-right {
-    width: 100%;
-  }
-  .explore-more-all {
-    width: 100%;
-  }
-  .explore-more-content {
-    height: max-content;
-  }
-  .explore-more-title > h1 {
-    font-size: 16px;
-  }
-  .your-talent-all {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .your-talent-left {
-    width: 100%;
-  }
+  .how-we-do-right,
+  .mission-vision-left,
+  .mission-vision-right,
+  .organization-left,
+  .organization-right,
+  .leader-left,
+  .leader-right,
+  .your-talent-left,
   .your-talent-right {
     width: 100%;
-    padding: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .your-talent-right > h1 {
-    font-size: 2rem;
-  }
-  .your-talent-p {
-    width: 95%;
-  }
-  .your-talent-p > button {
-    width: 100%;
-  }
-}
-
-/* 
-                                            Tablet 
-*/
-@media screen and (min-width: 431px) and (max-width: 768px) {
-  .cia-mean-right {
     padding: 1rem;
+  }
+  .mission-vision-p {
+    width: 100%;
   }
   .how-we-do-p {
     padding: 0;
   }
-  .mission-vision-p > button {
-    width: 80%;
+  .organization-left img {
+    padding: 0;
+  }
+  .cia-mean-all,
+  .what-we-do-all,
+  .how-we-do-all,
+  .mission-vision-all,
+  .organization-all,
+  .leader-all,
+  .your-talent-all {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .explore-more-all {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .explore-more-content {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .cia-mean-all {
+    width: max-content;
+  }
+  .how-we-do-p {
+    padding: 1rem;
+  }
+  .explore-more-title {
+    height: max-content;
   }
   .explore-more-all {
     width: 95%;
   }
-  .explore-more-img {
-    height: 15rem;
-  }
-  .explore-more-title > h1 {
+  .explore-more-title h1 {
     font-size: 2rem;
   }
   .your-talent-all {
-    width: 100%;
+    width: 95%;
   }
-  .your-talent-right {
-    padding: 1rem;
+  .your-talent-right > h1 {
+    line-height: 4rem;
   }
 }
-
-/* 
-                                            Desktop 
-*/
-@media screen and (min-width: 769px) {
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
 }

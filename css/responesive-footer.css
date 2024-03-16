@@ -3,103 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Phone  */
-@media screen and (max-width: 430px) {
-  #footer {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+/* Mobile: */
+@media screen and (max-width: 739px) {
   .footer-all {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    width: 100%;
+    margin-top: 1.5rem;
   }
   .footer-link {
+    width: 100%;
     display: flex;
-    justify-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .footer-link-content {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    align-content: space-between;
     flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
     overflow: hidden;
     padding: 1rem;
   }
   .social-media {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
   }
-  .social-button {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    padding-bottom: 1rem;
-  }
-  .icon-social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0;
-  }
-  .social-icons i {
-    display: flex;
-    justify-content: space-between;
-  }
   #footer-link {
-    display: flex;
-    justify-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
   }
 }
 
 /* Tablet */
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  .footer-all {
-    width: 100%;
-  }
-  .footer-link {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .footer-link-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: stretch;
-    padding: 0 10px 2rem;
-    overflow: hidden;
-  }
-  .social-media {
-    width: 100%;
-    padding-top: 3rem;
-  }
-  .icon-social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
+@media screen and (min-width: 740px) and (max-width: 1023px) {
 }
-
-/* Desktop */
-@media screen and (min-width: 769px) {
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
 }

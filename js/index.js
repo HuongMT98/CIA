@@ -13,12 +13,9 @@ function closeNavBar() {
 /*NavMenu-Option */
 
 let showNavbar = document.querySelectorAll('.navmenu-option-lg-m');
-let navShow = document.querySelector('.navmenu-option-smol-m');
-
 showNavbar.forEach(e => {
-    console.log('pick', e)
     e.addEventListener('click', () => {
-        let contentM = e.querySelector('.navmenu-option-smol-m')
-        contentM.classList.toggle('open-navbar')
+        let navShow = e.querySelector('.navmenu-option-smol-m')
+        navShow.classList.toggle('open-navbar')
     });
 });

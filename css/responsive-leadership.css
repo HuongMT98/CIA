@@ -2,28 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* Phone  */
-@media screen and (max-width: 430px) {
-  .leader-ship-title-all {
-    padding: 1rem;
-    width: 95%;
-  }
+} /* Mobile: */
+@media screen and (max-width: 739px) {
   .leader-ship-title-span button {
-    width: 60%;
+    width: max-content;
   }
-  .leader-ship-title-p {
-    width: 80%;
+  .leader-ship-title-all {
+    width: 95%;
+    padding: 1rem;
   }
   .leader-ship-content-all {
     width: 80%;
   }
-}
-
-/* Tablet */
-@media screen and (min-width: 431px) and (max-width: 768px) {
-}
-
-/* Desktop */
-@media screen and (min-width: 769px) {
 }

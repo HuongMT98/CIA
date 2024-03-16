@@ -37,6 +37,7 @@
   flex-wrap: nowrap;
   padding: 3rem 0;
   line-height: 3rem;
+  overflow: hidden;
 }
 .footer-link-content a:hover {
   box-shadow: inset 300px 0px red;
@@ -143,7 +144,7 @@
 .social-icons .icon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .social-icons i {

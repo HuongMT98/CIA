@@ -54,9 +54,12 @@ body {
 .heading-content-right {
   width: 50%;
 }
+.heading-content-rightimg {
+  height: 40rem;
+}
 .heading-content-rightimg > img {
   width: 100%;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 .calling-button {
   width: 60%;

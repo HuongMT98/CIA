@@ -218,19 +218,21 @@
 ⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜
 */
 
-/* Phone  */
-@media screen and (max-width: 430px) {
+/* Mobile: */
+@media screen and (max-width: 739px) {
   .nav-menu {
     display: none !important;
   }
 }
 
 /* Tablet */
-@media screen and (min-width: 431px) and (max-width: 768px) {
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .mobile-navbar {
+    display: none !important;
+  }
 }
-
-/* Desktop */
-@media screen and (min-width: 768px) {
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
   .mobile-navbar {
     display: none !important;
   }
