@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Truculenta", sans-serif;
+}
+/* Mobile: */
+@media screen and (max-width: 739px) {
+  .header-nav {
+    display: none;
+  }
+  .heading-all {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading-left {
+    width: 100%;
+  }
+  .heading-right {
+    width: 100%;
+  }
+  .student-programs-all {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .student-program-a {
+    width: 100%;
+  }
+  .student-program-b img {
+    width: 100% !important;
+  }
+  .student-program-b {
+    width: 100%;
+  }
+  .lifeatcia-head {
+    width: 95%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .life-heading-left {
+    width: 95%;
+  }
+  .life-heading-right {
+    width: 95%;
+  }
+  .swiper-slide-all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .swiper-slide-left {
+    width: 100% !important;
+  }
+  .swiper-slide-left > h2 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .swiper-slide-right {
+    width: 100%;
+  }
+  .featured-jobs-top {
+    text-align: center;
+  }
+  .featured-jobs-bottom-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featured-jobs-bottom {
+    width: 100%;
+  }
+  .jobs-box-heading > h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .featured-jobs-box-m {
+    height: max-content;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .header-nav {
+    display: none;
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+  .header-nav-m {
+    display: none;
+  }
+}
